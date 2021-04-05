@@ -90,8 +90,17 @@ body {
     background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.fa-plus {
-    float: right;
+
+.fa-arrow-up, .fa-arrow-down{
+    padding-right: .5em;
+    padding-top: .5em;
+    color: #2980b9;
+
+}
+
+.priority {
+    padding-right: .5em;
+    color: #64b3f4;
 }
 
 .fa-trash-alt {
@@ -103,4 +112,8 @@ body {
     background: linear-gradient(to right, #64b3f4, #88f157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.right {
+    float: right;
 }

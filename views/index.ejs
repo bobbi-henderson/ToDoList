@@ -17,7 +17,7 @@
 </head>
 <body>
     <nav class="navbar sticky-top navbar-light bg-light">
-        <a href="#" class="navbar-brand">To Do List</a>
+        <a href="/" class="navbar-brand">To Do List</a>
     </nav>
     <div id="container">
         <h1>TO-DO List</h1>
@@ -29,6 +29,11 @@
                 <li>
                     <span class="delete"><i class="fas fa-trash-alt"></i></span> 
                     <span class="task"><%= info[i].task %></span>
+                    <div class="right">
+                        <span class="priority"><%= info[i].priority %></span>
+                        <span class="priorityUp"> <i class="fas fa-arrow-up"></i> </span>
+                        <span class="priorityDown"> <i class="fas fa-arrow-down"></i> </span>
+                    </div>
                 </li>
             <% } %>
         </ul>
