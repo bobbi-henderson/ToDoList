@@ -35,6 +35,7 @@ async function addPriority(){
     let taskName = this.parentNode.parentNode.parentNode.childNodes[3].innerText
     let priorityLevel = Number(this.parentNode.parentNode.childNodes[1].innerText)
     console.log(taskName)
+    console.log(priorityLevel)
     try {
         const response = await fetch('increasePriority', {
             method: 'put', 
@@ -54,6 +55,7 @@ async function addPriority(){
 async function lowerPriority(){
     let taskName = this.parentNode.parentNode.parentNode.childNodes[3].innerText
     let priorityLevel = Number(this.parentNode.parentNode.childNodes[1].innerText)
+    console.log(taskName)
     console.log(priorityLevel)
     try {
         const response = await fetch('decreasePriority', {

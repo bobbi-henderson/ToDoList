@@ -31,7 +31,7 @@ app.get('/', (req, res)=>{
 })
 
 app.post('/addToDo', (req, res)=>{
-    db.collection('todos').insertOne({task: req.body.task, priority:0})
+    db.collection('todos').insertOne({task: req.body.task.trim(), priority:0})
     .then(result =>{
         console.log(result)
         res.redirect('/')
