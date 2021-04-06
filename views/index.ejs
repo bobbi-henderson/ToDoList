@@ -25,6 +25,12 @@
             <input type="text" name="task" placeholder="Add New To-Do">
         </form>
         <ul>
+            <li>
+                <span class="left font-weight-bold">Task</span>
+                <span class="right font-weight-bold">Priority Level</span>
+            </li>
+        </ul>
+        <ul>
             <% for(let i=0; i < info.length; i++) {%>
                 <li>
                     <span class="delete"><i class="fas fa-trash-alt"></i></span> 
